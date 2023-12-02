@@ -18,9 +18,6 @@ export default class Searchmerch extends LightningElement {
     }
     
     initiateSearch(event){
-        alert('Yes sir, I am ready to search name! = '+this.accName);
-
-        alert('Yes sir, I am ready to search! = '+this.accPhone);
         
         if(!this.accPhone){
             this.accPhone = '0';
