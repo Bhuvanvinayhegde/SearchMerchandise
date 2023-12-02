@@ -10,10 +10,10 @@ export default class parentmerchandise extends LightningElement {
         try{
             event.detail.forEach(x => {
                 var accData = {
-                    id:x.Id,
                     Name:x.Name,
                     Merchandise_Stock__c:x.Merchandise_Stock__c,
-                    Merchandise_Desc__c:x.Merchandise_Desc__c
+                    Merchandise_Desc__c:x.Merchandise_Desc__c,
+                    Merchandise_Price__c:x.Merchandise_Price__c
                 }
                 this.searchDetail.push(accData);
             });
